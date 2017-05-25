@@ -1,0 +1,11 @@
+body{
+    
+background-image:url("../assets/bg-a.jpg");
+background-repeat:repeat-x;
+background-position: 0px -50px;
+}
+
+.campaign{
+    border-right:1px solid #ccc;
+}
+

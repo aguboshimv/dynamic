@@ -1,0 +1,15 @@
+.header{
+    display: block;
+    background-color: #662E91;
+    padding:10px;
+}
+.header .holla{
+  
+   
+    margin:0px auto 0px;
+   
+}
+
+.campaign{
+    border-left:1px solid #ccc;
+}
