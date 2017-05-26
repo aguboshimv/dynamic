@@ -5,10 +5,10 @@
     <title>Hola</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="/public/css/font-awesome.css" rel="stylesheet">
-    <link href="/public/css/bootstrap.css" rel="stylesheet">
-    <link href="/public/css/style.css" rel="stylesheet">
-    <link href="/public/css/register.css" rel="stylesheet">
+    <link href="/css/font-awesome.css" rel="stylesheet">
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/register.css" rel="stylesheet">
     <link rel="favicon" href="assets/panda.png">
 </head>
 
@@ -16,11 +16,18 @@
     <div class="header">
         <img class="holla" src="/assets/holla.png">
     </div>
-<% if (!user) { %>
-	<p>Welcome! Please <a href="/login">log in</a>.</p>
-<% } else { %>
-	<p>Hello, <%= user.username %>. View your <a href="/profile">profile</a>.</p>
-<% } %>
+    <div class="container">
+        <br/>
+        <br/>
+        <% if (!user) { %>
+            <p>Welcome! Please <a href="/login">log in</a>.</p>
+            <% } else { %>
+                <p>Hello,
+                    <%= user.username %>. </p>
+                <% } %>
+
+    </div>
+
 
 </body>
 
