@@ -42,5 +42,10 @@ router.get('/home', isAuthenticated, function(req, res){
     failureFlash : true 
   }));
  
+/* GET HANDLES Signout*/
+ router.get('/signout', function(req, res) {
+  req.logout();
+  res.redirect('/');
+});
   return router;
 }
