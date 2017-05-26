@@ -9,8 +9,9 @@ module.exports = function(passport){
         },
         function(req, username, password, done) {
 
-            findOrCreateUser = function(){
-                // find a user in Mongo with provided username
+            // findOrCreateUser = function(){
+            //     // find a user in Mongo with provided username
+               
                 User.findOne({ 'username' :  username }, function(err, user) {
                     // In case of any error, return using the done method
                     if (err){
@@ -43,7 +44,7 @@ module.exports = function(passport){
                         });
                     }
                 });
-            };
+           // };
             // Delay the execution of findOrCreateUser and execute the method
             // in the next tick of the event loop
             process.nextTick(findOrCreateUser);
